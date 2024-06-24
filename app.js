@@ -5,6 +5,8 @@ const postsRouter = require("./routes/posts.route");
 const app = express();
 const PORT = 3018;
 
+
+
 app.use(express.json());
 app.use(cookieParser());
 app.use('/api', [usersRouter, postsRouter]);
